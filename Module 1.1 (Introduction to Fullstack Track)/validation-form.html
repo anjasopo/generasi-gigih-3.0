@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Validasi Form</title>
+  <script>
+    function validateForm() {
+      // Ambil nilai dari kotak teks email dan password
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      // Lakukan pemeriksaan validasi
+      if (email === '' || password === '') {
+        alert('Kedua kolom email dan password harus diisi.');
+        return false;
+      }
+      
+      // Validasi format email menggunakan regular expression
+      var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if (!email.match(emailRegex)) {
+        alert('Masukkan alamat email yang valid.');
+        return false;
+      }
+
+      // Validasi panjang password
+      if (password.length < 6) {
+        alert('Password harus memiliki setidaknya 6 karakter.');
+        return false;
+      }
+      
+      // Jika semua validasi berhasil, form dianggap valid
+      alert('Form valid. Melakukan pengiriman...');
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <form onsubmit="return validateForm()">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
