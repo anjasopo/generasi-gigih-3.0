@@ -1,295 +1,269 @@
 <!DOCTYPE html>
-<html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Spotify - Web Player</title>
+</head>
+<body>
 
-    <!-- LINK FOONT AWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <div class="sidebar">
+    <div class="logo">
+      <a href="#">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+      </a>
+    </div>
 
-    <!-- LINK GOOGLE FOONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="fa fa-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
 
-    <!-- STYLE CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- STYLE CSS HOVER -->
-    <link rel="stylesheet" href="./css/hover.css" />
+        <li>
+          <a href="#">
+            <span class="fa fa-search"></span>
+            <span>Search</span>
+          </a>
+        </li>
 
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+        <li>
+          <a href="#">
+            <span class="fa fas fa-book"></span>
+            <span>Your Library</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <title>Spotify</title>
-  </head>
-  <body>
-    <!-- MAIN CONTAINER - -->
-    <div id="wrapper" class="">
-      <!-- SIDEBAR - PLAYLIST -  -->
-      <div id="sidebar" class="">
-        <!-- LOGO -->
-        <img class="logo-big" src="./img/logo.svg" alt="Logo" />
-        <img class="logo-small" src="./img/logo-small.svg" alt="Logo" />
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="fa fas fa-plus-square"></span>
+            <span>Create Playlist</span>
+          </a>
+        </li>
 
-        <!-- SECTION INCON ( HOME-SEARCH-LIBRARY ) -->
-        <div class="icon">
-          <div class="icon-img">
-            <img src="./img/home.svg" alt="" />
-            <img src="./img/search.svg" alt="" />
-            <img src="./img/libreria.svg" alt="" />
-          </div>
-          <div class="icon-text">
-            <a href="#">Home</a>
-            <a href="#">Search</a>
-            <a href="#">Library</a>
-          </div>
-        </div>
+        <li>
+          <a href="#">
+            <span class="fa fas fa-heart"></span>
+            <span>Liked Songs</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-        <!-- SECTION PLAYLIST -->
-        <div id="playlist">
-          <h4>PLAYLIST</h4>
-          <div class="icon">
-            <div class="icon-img">
-              <i class="fa-sharp fa-solid fa-square-plus fa-2x"></i>
-            </div>
-            <div class="icon-text">
-              <a href="#">Create Playlist</a>
-            </div>
-          </div>
-        </div>
-        <!-- PLAYLIST -->
-        <div id="new-playlist">
-          <a href="#" class="icon-text"> Nama Playlist </a>
-          <a href="#" class="icon-text"> Nama Playlist </a>
-          <a href="#" class="icon-text"> Nama Playlist </a>
-          <a href="#" class="icon-text"> Nama Playlist </a>
-          <a href="#" class="icon-text"> Nama Playlist </a>
-          <a href="#" class="icon-text"> Nama Playlist </a>
-          <a href="#" class="icon-text"> Nama Playlist </a>
-        </div>
+    <div class="policies">
+      <ul>
+        <li>
+          <a href="#">Cookies</a>
+        </li>
+        <li>
+          <a href="#">Privacy</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-        <!-- PROFIL - DOWNLOAD -->
-        <div class="profile-download">
-          <div class="icon" id="download">
-            <div class="icon-img">
-              <img src="./img/download.svg" alt="scarica app" />
-            </div>
-            <div class="icon-text">
-              <a href="#">Install app</a>
-            </div>
-          </div>
-
-          <span id="bar"></span>
-
-          <div class="icon" id="profilo">
-            <div class="icon-img">
-              <img src="./img/profile.svg" alt="scarica app" />
-            </div>
-            <div class="icon-text">
-              <a href="#">Anjas Susetya</a>
-            </div>
-          </div>
-        </div>
+  <div class="main-container">
+    <div class="topbar">
+      <div class="prev-next-buttons">
+        <button type="button" class="fa fas fa-chevron-left"></button>
+        <button type="button" class="fa fas fa-chevron-right"></button>
       </div>
 
-      <!-- HEADER + ALBUM -->
-      <div id="main-content">
-        <!-- HEADER -->
-        <header id="header">
-          <div class="up-grade">UPGRADE</div>
-        </header>
-        <main id="album" class="">
-          <nav>
-            <a href="#">NEW RELEASE</a>
-            <a href="#">PODCAST</a>
-            <a href="#">FEATURED</a>
-            <a href="#">GENRE & MOOD</a>
-            <a href="#">ALBUMS</a>
-            <a href="#">ACTIVITY</a>
-          </nav>
-
-          <!-- SECTION-1 ALBUM - RECENTLY PLAYED -->
-          <section id="playlist-recently">
-            <div class="container">
-              <h2 class="title">Recently played</h2>
-              <div class="row">
-                <div class="col col-tab">
-                  <div class="album-card-section">
-                    <img
-                      src="./img/metal_lifting.jpg"
-                      alt="Copertina Heavy Metal"
-                    />
-                  </div>
-                  <h4 class="album-card-section">Heavy Metal</h4>
-                  <h5 class="album-card-section">Subtitle</h5>
-                </div>
-
-                <div class="col col-tab">
-                  <div class="album-card-section">
-                    <img src="./img/stranger.jpeg" alt="Copertina stranger" />
-                  </div>
-                  <h4 class="album-card-section">
-                    Stranger Things vol. 1 (a Netflix Original Series
-                    Soundtrack)
-                  </h4>
-                  <h5 class="album-card-section">Kyle Dixon & Michael Stein</h5>
-                </div>
-
-                <div class="col col-tab">
-                  <div class="album-card-section">
-                    <img
-                      src="./img/aquietplace.jpeg"
-                      alt="Copertina a quiet place"
-                    />
-                  </div>
-                  <h4 class="album-card-section">A quiet place</h4>
-                  <h5 class="album-card-section">Subtitle</h5>
-                </div>
-
-                <div class="col col-tab">
-                  <div class="album-card-section">
-                    <img src="./img/split.jpeg" alt="Copertina Split" />
-                  </div>
-                  <h4 class="album-card-section">Split</h4>
-                  <h5 class="album-card-section">Subtitle</h5>
-                </div>
-
-                <div class="col col-tab">
-                  <div class="album-card-section">
-                    <img src="./img/cure.jpeg" alt="Copertina cure" />
-                  </div>
-                  <h4 class="album-card-section">adasds</h4>
-                  <h5 class="album-card-section">Subtitle</h5>
-                </div>
-
-                <div class="col col-tab">
-                  <div class="album-card-section">
-                    <img src="./img/sinister.jpeg" alt="Copertina sinister" />
-                  </div>
-                  <h4 class="album-card-section">Sinister</h4>
-                  <h5 class="album-card-section">Subtitle</h5>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- SECTION-2 ALBUM - Anjas Susetya -->
-          <section id="playlist-Release">
-            <div class="container">
-              <h2 class="title">Made For Anjas Susetya</h2>
-              <h5>Show all.</h5>
-              <div class="row">
-                <div class="col col-tab">
-                  <div class="album-card-section">
-                    <img src="./img/radar.jpeg" alt="Release Radar" />
-                  </div>
-                  <h4 class="album-card-section">Release Radar</h4>
-                </div>
-
-                <div class="col col-tab">
-                  <div class="album-card-section">
-                    <img src="./img/mixdaily.jpeg" alt="Daily mix 1" />
-                  </div>
-                  <h4 class="album-card-section">Daily mix 1</h4>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- SECTION-3 ALBUM - ARTISTS POPULER -->
-          <section id="playlist-popular">
-            <div class="container">
-              <h2 class="title">Artist Populer</h2>
-              <h5>Show all.</h5>
-              <div class="row">
-                <div class="col col-tab">
-                  <div class="album-card-section album-circle">
-                    <img src="./img/youg.jpeg" alt="youg" />
-                  </div>
-                  <h4 class="album-card-section">Release Radar</h4>
-                </div>
-
-                <div class="col col-tab">
-                  <div class="album-card-section album-circle">
-                    <img src="./img/einaudi.jpeg" alt="einaudi" />
-                  </div>
-                  <h4 class="album-card-section">Daily mix 1</h4>
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="#">Premium</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+          <li>
+            <a href="#">Download</a>
+          </li>
+          <li class="divider">|</li>
+          <li>
+            <a href="#">Sign Up</a>
+          </li>
+        </ul>
+        <button type="button">Log In</button>
       </div>
     </div>
 
-    <!-- FOOTER - PLAYER BAR - -->
-    <footer id="player" class="">
-      <!-- # SINISTRA - INFO PLAYER - -->
-      <div class="container" id="info-player">
-        <div class="box-img">
-          <img src="./img/sinister.jpeg" alt="sinister" />
-        </div>
+    <div class="spotify-playlists">
+      <h2>Spotify Playlists</h2>
 
-        <ul>
-          <li>Sister</li>
-          <li>Brano Nome</li>
-        </ul>
-        <div>
-          <i class="fa-regular fa-heart fa-xm" style="color: #b0b0b0"></i>
-          <i class="fa-regular fa-folder fa-xm" style="color: #b0b0b0"></i>
-        </div>
-      </div>
-
-      <!-- # CENTERO - CONTROLLI PLAYER - BAR PLAYER - -->
-      <div class="container">
-        <!-- - CONTROLLI PLAYER - -->
-        <div class="contoller-player">
-          <i class="fa-solid fa-shuffle" style="color: #ffffff"></i>
-          <i class="fa-solid fa-backward-step" style="color: #ffffff"></i>
-          <i class="fa-regular fa-circle-play fa-2x" style="color: #ffffff"></i>
-          <i class="fa-solid fa-forward-step" style="color: #ffffff"></i>
-          <i
-            class="fa-solid fa-rotate-left fa-flip-horizontal"
-            style="color: #ffffff"
-          ></i>
-        </div>
-
-        <!-- - BAR PLAYER - -->
-        <div class="contoller-player">
-          <span>0:25</span>
-          <div class="bar-container">
-            <span class="bar-size">
-              <span class="bar-progress"></span>
-            </span>
+      <div class="list">
+        <div class="item">
+          <img src="https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster"/>
+          <div class="play">
+            <span class="fa fa-play"></span>
           </div>
-          <span>4:35</span>
+          <h4>Today's Top Hits</h4>
+          <p>Rema & Selena Gomez are on top of the...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>RapCaviar</h4>
+          <p>New Music from Lil Baby, Juice WRLD an...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>All out 2010s</h4>
+          <p>The biggest spmgs pf tje 2010s. Cover:...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Rock Classics</h4>
+          <p>Rock Legends & epic songs that continue t...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Chill Hits</h4>
+          <p>Kick back to the best new and recent chill...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spotify-playlists">
+      <h2>Focus</h2>
+      <div class="list">
+        <div class="item">
+          <img src="https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Peaceful Piano</h4>
+          <p>Relax and indulge with beautiful piano pieces</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Deep Focus</h4>
+          <p>Keep calm and focus with ambient and pos...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Instrumental Study</h4>
+          <p>Focus with soft study music in the...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>chill lofi study beats</h4>
+          <p>The perfect study beats, twenty four...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Coding Mode</h4>
+          <p>Dedicated to all the programmers out there.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spotify-playlists">
+      <h2>Mood</h2>
+      <div class="list">
+        <div class="item">
+          <img src="https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Mood Booster</h4>
+          <p>Get happy with today's dose of feel-good...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Feelin' Good</h4>
+          <p>Feel good with this positively timeless...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Dark & Stormy</h4>
+          <p>Beautifully dark, dramatic tracks.</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Feel Good Piano</h4>
+          <p>Happy vibes for an upbeat morning.</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Feelin' Myself</h4>
+          <p>The hip-hop playlist that's a whole mood...</p>
         </div>
       </div>
 
-      <!-- # CONTROLL AUDIO -->
-      <div class="container" id="sound">
-        <i
-          class="fa-solid fa-list-ul fa-xm hamburger-audio"
-          style="color: #ffffff"
-        ></i>
-        <i class="fa-solid fa-list-ul fa-xm" style="color: #ffffff"></i>
-        <i class="fa-solid fa-desktop fa-xm" style="color: #ffffff"></i>
-        <i class="fa-solid fa-volume-high fa-xm" style="color: #ffffff"></i>
-        <div class="bar-container">
-          <span class="bar-size">
-            <span class="bar-progress"></span>
-          </span>
-        </div>
+      <hr>
+    </div>
+
+    <div class="preview">
+      <div class="text">
+        <h6>Preview of Spotify</h6>
+        <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
       </div>
-    </footer>
-  </body>
+      <div class="button">
+        <button type="button">Sign up free</button>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://kit.fontawesome.com/23cecef777.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
 </html>
