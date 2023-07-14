@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Spotipy - Web Player</title>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">
+      <a href="#">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+      </a>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="fa fa-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="fa fa-search"></span>
+            <span>Search</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="fa fas fa-book"></span>
+            <span>Your Library</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="fa fas fa-plus-square"></span>
+            <span>Create Playlist</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <span class="fa fas fa-heart"></span>
+            <span>Liked Songs</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="policies">
+      <ul>
+        <li>
+          <a href="#">Cookies</a>
+        </li>
+        <li>
+          <a href="#">Privacy</a>
+        </li>
+        <li>
+          <a>2023 &copy; anjasopo</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="topbar">
+      <div class="prev-next-buttons">
+        <button type="button" class="fa fas fa-chevron-left"></button>
+        <button type="button" class="fa fas fa-chevron-right"></button>
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="#">Premium</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+          <li>
+            <a href="#">Download</a>
+          </li>
+          <li class="divider">|</li>
+          <li>
+            <a href="#">Sign Up</a>
+          </li>
+        </ul>
+        <button type="button">Log In</button>
+      </div>
+    </div>
+
+    <div class="spotify-playlists">
+      <h2>Spotify Playlists</h2>
+
+      <div class="list">
+        <div class="item">
+          <img src="https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster"/>
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Today's Top Hits</h4>
+          <p>Rema & Selena Gomez are on top of the...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>RapCaviar</h4>
+          <p>New Music from Lil Baby, Juice WRLD an...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>All out 2010s</h4>
+          <p>The biggest spmgs pf tje 2010s. Cover:...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Rock Classics</h4>
+          <p>Rock Legends & epic songs that continue t...</p>
+        </div>
+
+        <div class="item">
+          <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" />
+          <div class="play">
+            <span class="fa fa-play"></span>
+          </div>
+          <h4>Chill Hits</h4>
+          <p>Kick back to the best new and recent chill...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spotify-playlists" id="dummy-playlist">
+      <h2>Dummy Playlists</h2>
+      <div class="list">
+        <!-- Playlist items will be dynamically generated here -->
+      </div>
+    </div>
+
+    <div class="preview">
+      <div class="text">
+        <h6>Preview of Spotify</h6>
+        <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+      </div>
+      <div class="button">
+        <button type="button">Sign up free</button>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://kit.fontawesome.com/23cecef777.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/main.js"></script>
+    // Data dummy for the second playlist
+    const secondPlaylistData = [
+      { title: 'Playlist Song 1', duration: '2:30', artist: 'Artist 1' },
+      { title: 'Playlist Song 2', duration: '3:15', artist: 'Artist 2' },
+      { title: 'Playlist Song 3', duration: '4:10', artist: 'Artist 3' },
+      { title: 'Playlist Song 4', duration: '2:12', artist: 'Artist 4' },
+      { title: 'Playlist Song 5', duration: '5:55', artist: 'Artist 5' }
+    ];
+  
+    // Function to generate the content for the second playlist
+    function generateSecondPlaylist() {
+      const secondPlaylistContainer = document.getElementById('second-playlist');
+  
+      // Create the list container
+      const listContainer = document.createElement('div');
+      listContainer.classList.add('list');
+      secondPlaylistContainer.appendChild(listContainer);
+  
+      // Loop through the second playlist data and create the playlist items
+      secondPlaylistData.forEach(song => {
+        const item = document.createElement('div');
+        item.classList.add('item');
+        listContainer.appendChild(item);
+  
+        const songs = document.createElement('div');
+        songs.classList.add('songs');
+        item.appendChild(songs);
+  
+        const title = document.createElement('h4');
+        title.textContent = song.title;
+        songs.appendChild(title);
+  
+        const duration = document.createElement('p');
+        duration.textContent = song.duration;
+        songs.appendChild(duration);
+  
+        const artist = document.createElement('p');
+        artist.textContent = song.artist;
+        songs.appendChild(artist);
+      });
+    }
+  
+    // Call the function to generate the content for the second playlist
+    generateSecondPlaylist();
+  </script> -->
+</body>
+</html>
