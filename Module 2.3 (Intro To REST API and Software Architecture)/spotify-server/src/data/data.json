@@ -1,0 +1,63 @@
+{
+  "playlists": [
+    {
+      "playlistId": "1",
+      "songs": [
+        {
+          "id": "1",
+          "title": "Song Title 1",
+          "artists": [
+            "Artists 1",
+            "Artists 2"
+          ],
+          "url": "https://example.com/song_url_1",
+          "currentlyPlaying": 0,
+          "playCount": 0
+        },
+        {
+          "id": "2",
+          "title": "Song Title 2",
+          "artists": [
+            "Artists 2"
+          ],
+          "url": "https://example.com/song_url_2",
+          "currentlyPlaying": 0,
+          "playCount": 0
+        }
+      ]
+    }
+  ],
+  "songs": [
+    {
+      "id": "1",
+      "title": "Song Title 1",
+      "artists": [
+        "Artists 1",
+        "Artists 2"
+      ],
+      "url": "https://example.com/song_url_1",
+      "currentlyPlaying": 0,
+      "playCount": 0
+    },
+    {
+      "id": "2",
+      "title": "Song Title 2",
+      "artists": [
+        "Artists 2"
+      ],
+      "url": "https://example.com/song_url_2",
+      "currentlyPlaying": 0,
+      "playCount": 0
+    },
+    {
+      "id": "3",
+      "title": "Song Title 3",
+      "artists": [
+        "Artists 3"
+      ],
+      "url": "https://example.com/song_url_3",
+      "currentlyPlaying": 0,
+      "playCount": 0
+    }
+  ]
+}
