@@ -1,0 +1,129 @@
+[{
+  "_id": {
+    "$oid": "64b6ccc49f302b6afb25482f"
+  },
+  "name": "Taylor Swift",
+  "dateOfBirth": {
+    "$date": "1989-12-13T00:00:00.000Z"
+  },
+  "genres": [
+    "Pop",
+    "Country"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b6ccc49f302b6afb254830"
+  },
+  "name": "Ed Sheeran",
+  "dateOfBirth": {
+    "$date": "1991-02-17T00:00:00.000Z"
+  },
+  "genres": [
+    "Pop",
+    "Folk"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b6ccc49f302b6afb254831"
+  },
+  "name": "Adele",
+  "dateOfBirth": {
+    "$date": "1988-05-05T00:00:00.000Z"
+  },
+  "genres": [
+    "Pop",
+    "Soul"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b6ccc49f302b6afb254832"
+  },
+  "name": "Bruno Mars",
+  "dateOfBirth": {
+    "$date": "1985-10-08T00:00:00.000Z"
+  },
+  "genres": [
+    "Pop",
+    "R&B"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b6ccc49f302b6afb254833"
+  },
+  "name": "Beyoncé",
+  "dateOfBirth": {
+    "$date": "1981-09-04T00:00:00.000Z"
+  },
+  "genres": [
+    "Pop",
+    "R&B"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b6ccc49f302b6afb254834"
+  },
+  "name": "Justin Bieber",
+  "dateOfBirth": {
+    "$date": "1994-03-01T00:00:00.000Z"
+  },
+  "genres": [
+    "Pop",
+    "R&B"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b6ccc49f302b6afb254835"
+  },
+  "name": "Rihanna",
+  "dateOfBirth": {
+    "$date": "1988-02-20T00:00:00.000Z"
+  },
+  "genres": [
+    "Pop",
+    "R&B"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b6ccc49f302b6afb254836"
+  },
+  "name": "Drake",
+  "dateOfBirth": {
+    "$date": "1986-10-24T00:00:00.000Z"
+  },
+  "genres": [
+    "Hip Hop",
+    "R&B"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b6ccc49f302b6afb254837"
+  },
+  "name": "Katy Perry",
+  "dateOfBirth": {
+    "$date": "1984-10-25T00:00:00.000Z"
+  },
+  "genres": [
+    "Pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b6ccc49f302b6afb254838"
+  },
+  "name": "Coldplay",
+  "dateOfBirth": {
+    "$date": "1996-01-16T00:00:00.000Z"
+  },
+  "genres": [
+    "Rock",
+    "Alternative"
+  ]
+}]

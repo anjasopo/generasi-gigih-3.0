@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "64b549137428734c95ac9748"
+  },
+  "title": "Bohemian Rhapsody",
+  "artist": "Queen",
+  "album": "A Night at the Opera"
+},
+{
+  "_id": {
+    "$oid": "64b549137428734c95ac9749"
+  },
+  "title": "Hotel California",
+  "artist": "Eagles",
+  "album": "Hotel California"
+},
+{
+  "_id": {
+    "$oid": "64b549137428734c95ac974a"
+  },
+  "title": "Imagine",
+  "artist": "John Lennon",
+  "album": "Imagine"
+},
+{
+  "_id": {
+    "$oid": "64b549137428734c95ac974b"
+  },
+  "title": "Like a Rolling Stone",
+  "artist": "Bob Dylan",
+  "album": "Highway 61 Revisited"
+},
+{
+  "_id": {
+    "$oid": "64b549137428734c95ac974c"
+  },
+  "title": "Smells Like Teen Spirit",
+  "artist": "Nirvana",
+  "album": "Nevermind"
+},
+{
+  "_id": {
+    "$oid": "64b549137428734c95ac974d"
+  },
+  "title": "Hey Jude",
+  "artist": "The Beatles",
+  "album": "The Beatles (White Album)"
+},
+{
+  "_id": {
+    "$oid": "64b549137428734c95ac974e"
+  },
+  "title": "Stairway to Heaven",
+  "artist": "Led Zeppelin",
+  "album": "Led Zeppelin IV"
+},
+{
+  "_id": {
+    "$oid": "64b549137428734c95ac974f"
+  },
+  "title": "Purple Haze",
+  "artist": "Jimi Hendrix",
+  "album": "Are You Experienced"
+},
+{
+  "_id": {
+    "$oid": "64b549137428734c95ac9750"
+  },
+  "title": "Sweet Child o' Mine",
+  "artist": "Guns N' Roses",
+  "album": "Appetite for Destruction"
+},
+{
+  "_id": {
+    "$oid": "64b549137428734c95ac9751"
+  },
+  "title": "Wonderwall",
+  "artist": "Oasis",
+  "album": "(What's the Story) Morning Glory?"
+}]
