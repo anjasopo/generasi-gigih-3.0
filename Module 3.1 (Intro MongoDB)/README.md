@@ -9,4 +9,4 @@ Description:
 2. `Populate the database you’ve created above with at least 10 data for each collection`
 
 Results:
-![Hasil](Homework - Intro MongoDB.png)
+![Hasil](https://github.com/anjasopo/generasi-gigih-3.0/blob/main/Module%203.1%20(Intro%20MongoDB)/Homework%20-%20Intro%20MongoDB.png?raw=true)
