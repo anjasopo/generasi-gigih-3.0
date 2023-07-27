@@ -1,0 +1,79 @@
+/* Add your index-specific styles here */
+
+/* Reset default margins and paddings */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set box-sizing to border-box for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set a default font family and color */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+/* Set background color for the body */
+body {
+  background-color: #121212;
+}
+
+/* Add global styles for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Add global styles for links */
+a {
+  color: #1db954;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #128c46;
+}
+
+/* Add global styles for buttons */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #1db954;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #128c46;
+}

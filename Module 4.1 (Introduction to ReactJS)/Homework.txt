@@ -1,0 +1,10 @@
+Excercise
+
+1. Create a new react app and try to run in on your computer
+2. Try to convert Module 1 exercise (simplified Spotify with HTML and CSS) to React
+App using JSX (UI only, no functionality)
+3. If cannot be finished in class please continue at your own pace outside class
+(homework)
+4. On the next session, some random participants will have to showcase
+
+Notes: no need to be as complex as spotify, just do a simple one
