@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "64c0f430f3a9ad520168c9e8"
+  },
+  "productID": "Product1",
+  "urlProduct": "https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster",
+  "titleProduct": "Tas Ransel Pria",
+  "priceProduct": "99000",
+  "videoID": "Video2"
+},
+{
+  "_id": {
+    "$oid": "64c0f430f3a9ad520168c9e9"
+  },
+  "productID": "Product2",
+  "urlProduct": "https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster",
+  "titleProduct": "Iphone 11 64GB",
+  "priceProduct": "6999000",
+  "videoID": "Video1"
+},
+{
+  "_id": {
+    "$oid": "64c167acf3a9ad520168c9f0"
+  },
+  "productID": "Product3",
+  "urlProduct": "https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster",
+  "titleProduct": "Kemeja Slim Fit Lengan Pendek",
+  "priceProduct": "100000",
+  "videoID": "Video3"
+},
+{
+  "_id": {
+    "$oid": "64c167acf3a9ad520168c9f1"
+  },
+  "productID": "Product4",
+  "urlProduct": "https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster",
+  "titleProduct": "Citra Body Lotion",
+  "priceProduct": "20000",
+  "videoID": "Video4"
+},
+{
+  "_id": {
+    "$oid": "64c167acf3a9ad520168c9f2"
+  },
+  "productID": "Product5",
+  "urlProduct": "https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster",
+  "titleProduct": "Emas Antam 1 Gram",
+  "priceProduct": "999999",
+  "videoID": "Video5"
+},
+{
+  "_id": {
+    "$oid": "64c1c5a1f3a9ad520168c9f3"
+  },
+  "productID": "Product6",
+  "urlProduct": "https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster",
+  "titleProduct": "Samsung Galaxy A34",
+  "priceProduct": "4100000",
+  "videoID": "Video1"
+},
+{
+  "_id": {
+    "$oid": "64c1c5a1f3a9ad520168c9f4"
+  },
+  "productID": "Product7",
+  "urlProduct": "https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster",
+  "titleProduct": "Xiaomi Redmi 12C 4/64 GB",
+  "priceProduct": "1200000",
+  "videoID": "Video1"
+},
+{
+  "_id": {
+    "$oid": "64c1c5a1f3a9ad520168c9f5"
+  },
+  "productID": "Product8",
+  "urlProduct": "https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster",
+  "titleProduct": "Realme 10 8/128 Garansi",
+  "priceProduct": "3000000",
+  "videoID": "Video1"
+}]

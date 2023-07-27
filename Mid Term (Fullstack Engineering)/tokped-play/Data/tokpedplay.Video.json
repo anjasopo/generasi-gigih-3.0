@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "64c0f421f3a9ad520168c9e6"
+  },
+  "videoID": "Video1",
+  "urlImageThumbnail": "https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster",
+  "titleImageThumbnail": "Beli HP Disini"
+},
+{
+  "_id": {
+    "$oid": "64c1639cf3a9ad520168c9ec"
+  },
+  "videoID": "Video2",
+  "urlImageThumbnail": "https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster",
+  "titleImageThumbnail": "Midnight Full Diskon Tas"
+},
+{
+  "_id": {
+    "$oid": "64c1639cf3a9ad520168c9ed"
+  },
+  "videoID": "Video3",
+  "urlImageThumbnail": "https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster",
+  "titleImageThumbnail": "Promo Baju Termurah"
+},
+{
+  "_id": {
+    "$oid": "64c1639cf3a9ad520168c9ee"
+  },
+  "videoID": "Video4",
+  "urlImageThumbnail": "https://fakeimg.pl/600/1e3a8a/fff?text=Cover&font=lobster",
+  "titleImageThumbnail": "Free Handbody Dan Read Jelly"
+},
+{
+  "_id": {
+    "$oid": "64c1639cf3a9ad520168c9ef"
+  },
+  "videoID": "Video5",
+  "urlImageThumbnail": "https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster",
+  "titleImageThumbnail": "Banyak Diskon Emas"
+}]
