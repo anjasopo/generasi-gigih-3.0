@@ -105,6 +105,7 @@
           <img src="https://fakeimg.pl/600/7f1d1d/fff?text=Cover&font=lobster"/>
           <div class="play">
             <span class="fa fa-play"></span>
+            <span class="fa fa-pause"></span>
           </div>
           <h4>Today's Top Hits</h4>
           <p>Rema & Selena Gomez are on top of the...</p>
@@ -114,6 +115,7 @@
           <img src="https://fakeimg.pl/600/365314/fff?text=Cover&font=lobster" />
           <div class="play">
             <span class="fa fa-play"></span>
+            <span class="fa fa-pause"></span>
           </div>
           <h4>RapCaviar</h4>
           <p>New Music from Lil Baby, Juice WRLD an...</p>
@@ -121,8 +123,9 @@
 
         <div class="item">
           <img src="https://fakeimg.pl/600/164e63/fff?text=Cover&font=lobster" />
-          <div class="play">
+          <div class="play paused">
             <span class="fa fa-play"></span>
+            <span class="fa fa-pause"></span>
           </div>
           <h4>All out 2010s</h4>
           <p>The biggest spmgs pf tje 2010s. Cover:...</p>
@@ -265,5 +268,32 @@
     src="https://kit.fontawesome.com/23cecef777.js"
     crossorigin="anonymous"
   ></script>
+  <script>
+    const playButtons = document.querySelectorAll('.fa-play');
+  
+    playButtons.forEach((button) => {
+      button.addEventListener('click', togglePlayPause);
+    });
+  
+    function togglePlayPause(event) {
+      const button = event.target;
+      const item = button.closest('.item');
+  
+      // Check if the item is already playing or paused
+      if (item.classList.contains('playing')) {
+        // Pause the music
+        item.classList.remove('playing');
+      } else {
+        // Play the music
+        // Pause other playing items (optional)
+        const playingItems = document.querySelectorAll('.playing');
+        playingItems.forEach((playingItem) => {
+          playingItem.classList.remove('playing');
+        });
+  
+        item.classList.add('playing');
+      }
+    }
+  </script>  
 </body>
 </html>

@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const mongoString = process.env.DATABASE_URL;
 const routes = require('./src/routes/routes');
+const cors = require('cors');
 
 mongoose.connect(mongoString);
 
@@ -26,6 +27,7 @@ app.use(
     extended: true,
   })
 );
+app.use(cors());
 
 app.use('/api', routes);
 

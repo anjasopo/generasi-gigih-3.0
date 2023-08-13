@@ -1,0 +1,37 @@
+.movie-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .movie-card:hover {
+    background-color: lightgray;
+  }
+  
+  .movie-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card p {
+    margin: 5px 0;
+  }
+  
+  .movie-details {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .movie-details p {
+    margin: 5px 0;
+  }
+  
+  .movie-details p:first-child {
+    margin-top: 0;
+  }
+  
+  .movie-details h3 {
+    color: #555;
+  }  
